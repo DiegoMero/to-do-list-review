@@ -1,0 +1,95 @@
+.to-do-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-left: 25%;
+  margin-right: 25%;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.to-do-container h2 {
+  margin: 0;
+  padding: 1.5%;
+}
+
+#task {
+  border: none;
+  padding: 1.5%;
+  font-style: italic;
+  flex: auto;
+}
+
+.to-do-container ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.title-container {
+  border: 2px solid whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-container {
+  border: 2px solid whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reload-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.enter-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.three-dots-icon {
+  content: url(./images/threedots.png);
+  width: 15px;
+  height: 15px;
+  margin-left: auto;
+}
+
+.mini-list-container {
+  display: flex;
+  align-items: center;
+  padding: 1.5%;
+  font-size: 25px;
+  border: 2px solid whitesmoke;
+  column-gap: 20px;
+}
+
+.task-description {
+  border-style: none;
+  background-color: white;
+  width: auto;
+}
+
+button {
+  padding: 1.5%;
+  border-style: none;
+  color: gray;
+}
+
+.input-editable {
+  border: none;
+  outline: none;
+  border-color: white;
+}
+
+.trashcan {
+  content: url(./images/delete.png);
+  width: 15px;
+  height: 15px;
+  margin-left: auto;
+}
+
+.task-checkbox:checked + .task-description {
+  text-decoration: line-through;
+}
